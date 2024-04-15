@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Test Dashboard</title>
+</head>
+
+<body>
+    <div class="bg-gray-100 h-screen m text-black">
+        <div class="flex-grow bg-gray-100 pb-10">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" id="back">
+                            <path
+                                d="M22,15H12.41l2.3-2.29a1,1,0,0,0-1.42-1.42l-4,4a1,1,0,0,0-.21.33,1,1,0,0,0,0,.76,1,1,0,0,0,.21.33l4,4a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L12.41,17H22a1,1,0,0,0,0-2Z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="navbar-center">
+                    <a class="btn btn-ghost text-xl">Deteksi Penyakit</a>
+                </div>
+                <div class="navbar-end">
+                </div>
+            </div>
+
+            <div class="px-6 py-4">
+                <div role="alert" class="alert alert-info flex-row">
+                    <h3 class="font-bold text-lg">Deteksi pada Tanaman Pepaya</h3>
+                    <p class="text-sm font-semibold">You Only Look Once (YOLO) Model</p>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center px-6">
+                <label for="dropzone-file"
+                    class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-100">
+                    <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                        <svg class="w-8 h-8 mb-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 20 16">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                        </svg>
+                        <p class="mb-2 text-sm text-gray-500 text-center"><span class="font-semibold">Tekan Mendeteksi
+                                <br></span>File berupa .jpg, .png, .jpeg</p>
+                    </div>
+                    <input id="dropzone-file" type="file" class="hidden" />
+                </label>
+            </div>
+            <div class="px-6 flex my-4">
+                <div class="btn btn-accent mx-auto text-white w-64">Deteksi Gambar</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
